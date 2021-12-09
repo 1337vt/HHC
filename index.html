@@ -5,12 +5,12 @@
 body {
   margin: 0;
 }
-
+<!-- Make sure this matches the left margin WIDTH below, otherwise there's a huge gap. -->
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 20%;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -23,9 +23,9 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
-
+<!-- Background color of selected menu item (light blueish) -->
 li a.active {
-  background-color: #04AA6D;
+  background-color: ##58a3cb;
   color: white;
 }
 
@@ -43,8 +43,8 @@ li a:hover:not(.active) {
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-
-<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<!-- Make sure this left margin matches the one above, otherwise there's a huge gap. -->
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
   <h2>Fixed Full-height Side Nav</h2>
   <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
   <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>

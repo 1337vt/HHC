@@ -137,8 +137,19 @@
 .list-items .icons a:first-child{
   margin-left: 0px;
 }
-
+/*body...duh*/
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='3440' height='1440' preserveAspectRatio='none' viewBox='0 0 3440 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='3440' height='1440' x='0' y='0' fill='rgba(215%2c 215%2c 215%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c952.06C193.689%2c933.955%2c387.867%2c957.61%2c567.621%2c883.236C772.347%2c798.53%2c1016.07%2c706.995%2c1093.769%2c499.508C1171.583%2c291.712%2c987.799%2c82.04%2c949.492%2c-136.516C912.779%2c-345.98%2c973.311%2c-569.131%2c873.549%2c-756.935C761.566%2c-967.745%2c591.724%2c-1168.059%2c363.819%2c-1239.055C134.984%2c-1310.341%2c-131.573%2c-1263.215%2c-332.58%2c-1132.665C-517.759%2c-1012.395%2c-549.482%2c-763.466%2c-661.459%2c-573.158C-749.716%2c-423.164%2c-892.07%2c-304.028%2c-921.115%2c-132.436C-950.495%2c41.133%2c-864.543%2c204.579%2c-822.019%2c375.404C-768.86%2c588.95%2c-820.331%2c869.753%2c-640.176%2c996.134C-461.449%2c1121.513%2c-217.371%2c972.379%2c0%2c952.06' fill='%23c2c2c2'%3e%3c/path%3e%3cpath d='M3440 2339.27C3605.107 2322.763 3684.865 2127.649 3828.168 2044.001 3980.999 1954.7910000000002 4223.86 1992.3339999999998 4304.349 1834.7350000000001 4384.084 1678.612 4246.274 1498.545 4191.852 1331.9 4146.679 1193.578 4093.401 1064.728 4013.226 943.297 3922.066 805.228 3846.499 639.71 3693.409 576.967 3536.442 512.635 3342.262 522.71 3195.783 608.274 3056.257 689.776 3044.357 883.862 2947.111 1012.909 2859.167 1129.613 2715.471 1194.366 2654.1639999999998 1327.014 2579.9030000000002 1487.688 2495.047 1677.002 2565.036 1839.5819999999999 2635.002 2002.108 2844.873 2039.1950000000002 2998.527 2126.946 3143.256 2209.6 3274.159 2355.85 3440 2339.27' fill='%23ededed'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='3440' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
 /*content area of the each page*/
+hr.thick {
+  border: 15px solid #202020;
+  border-radius: 3px;
+}
+hr.thin {
+  border: 3px solid #4a4a4a;
+  border-radius: 1px;
+}
 .content{
   position: absolute;
   top: 50%;
@@ -154,10 +165,21 @@
   font-weight: 700;
 }
 .content p{
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .content videoGameFont{
   font-family: 'Press Start 2P', cursive;
+  font-size:50px;
+}
+
+.content videoGameSubtitleFont{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+.content term{
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
 }

